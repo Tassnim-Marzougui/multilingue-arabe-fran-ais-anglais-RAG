@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+checkpoints/
+data/
+fr/data/processed/chunks.json
+fr/data_derived/chunks.json

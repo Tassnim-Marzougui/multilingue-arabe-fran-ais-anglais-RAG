@@ -1,0 +1,16 @@
+
+# Environnement virtuel
+.venv/
+
+# Clés API et variables secrètes
+.env
+.env.*
+!.env.example
+
+# Fichiers temporaires Python
+__pycache__/
+*.pyc
+
+# Bases vectorielles et modèles locaux
+**/chroma_db/
+**/models/

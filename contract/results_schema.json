@@ -1,0 +1,36 @@
+
+{
+  "version": "1.0",
+  "description": "Format commun des résultats MCP",
+  "search_documents": {
+    "type": "array",
+    "items": {
+      "doc_id": "string",
+      "langue": "string",
+      "page_ou_section": "string",
+      "texte": "string",
+      "score_rerank": "number | null"
+    }
+  },
+  "rerank_documents": {
+    "type": "array",
+    "items": {
+      "doc_id": "string",
+      "langue": "string",
+      "page_ou_section": "string",
+      "texte": "string",
+      "score_rerank": "number | null"
+    }
+  },
+  "answer_question": {
+    "question": "string",
+    "reponse": "string",
+    "citations": [
+      {
+        "source": "integer",
+        "doc_id": "string",
+        "page_ou_section": "string"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+
+{
+  "version": "1.0",
+  "description": "Contrat des outils MCP pour l'assistant RAG multilingue",
+  "tools": [
+    {
+      "name": "search_documents",
+      "description": "Rechercher des passages pertinents dans les documents.",
+      "parameters": {
+        "query": "string",
+        "langue": "string | null",
+        "k": "integer"
+      }
+    },
+    {
+      "name": "rerank_documents",
+      "description": "Reclasser les passages selon leur pertinence.",
+      "parameters": {
+        "query": "string",
+        "langue": "string | null",
+        "k": "integer"
+      }
+    },
+    {
+      "name": "answer_question",
+      "description": "Générer une réponse avec des sources documentaires.",
+      "parameters": {
+        "question": "string",
+        "langue": "string | null"
+      }
+    }
+  ]
+}
